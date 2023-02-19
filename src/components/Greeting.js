@@ -31,11 +31,11 @@ const Greeting = () => {
     }, []);
 
     return (
-        <div className='flex w-1/3 justify-center'>
+        <div className='flex w-1/3 justify-center py-2'>
             {!userExists ? (
                 <form onSubmit={onSubmit}>
-                    <div className="flex items-center border-b border-current py-2 text-lg">
-                        <input className="appearance-none bg-transparent w-72 border-none mr-3 py-1 px-2 leading-tight focus:outline-none focus:placeholder-transparent text-center"
+                    <div className="flex items-center border-b border-current py-2 text-xl">
+                        <input className="appearance-none bg-transparent w-72 border-none m-auto py-1 px-2 leading-tight focus:outline-none focus:placeholder-transparent text-center"
                             type="text"
                             name="user"
                             placeholder="Greetings! What's your name?"
@@ -43,7 +43,7 @@ const Greeting = () => {
                         />
                     </div>
                 </form>) : (
-                <span className="text-lg">Good {getTimeOfDay()}, {user}.</span>
+                <span className="text-xl">Good {getTimeOfDay()}, {user}.</span>
             )}
         </div>
     )
