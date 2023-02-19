@@ -15,8 +15,8 @@ const Quote = () => {
     }, []);
 
     return (
-        <div className='m-auto pt-1'>
-            <span>"{quote? quote.quote : localStorage.getItem('storedQuote')}"</span>
+        <div className='m-auto'>
+            <span className='text-lg'>"{quote? quote.quote : localStorage.getItem('storedQuote')}"</span>
         </div>
     )
 }
