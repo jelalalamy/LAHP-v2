@@ -31,7 +31,7 @@ const Greeting = () => {
     }, []);
 
     return (
-        <div className='flex w-1/3 justify-center py-2'>
+        <div className='flex justify-center py-2'>
             {!userExists ? (
                 <form onSubmit={onSubmit}>
                     <div className="flex items-center border-b border-current py-2 text-xl">
@@ -43,7 +43,7 @@ const Greeting = () => {
                         />
                     </div>
                 </form>) : (
-                <span className="text-xl">Good {getTimeOfDay()}, {user}.</span>
+                <span className="text-xl select-none">Good {getTimeOfDay()}, {user}.</span>
             )}
         </div>
     )

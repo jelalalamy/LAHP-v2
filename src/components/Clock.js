@@ -13,8 +13,8 @@ const Clock = () => {
     }, []);
 
     return (
-        <div className="flex w-1/3 justify-center">
-            <span className="text-9xl m-auto">
+        <div className="flex justify-center">
+            <span className="text-9xl m-auto select-none">
                 {date.toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute:'2-digit' })}
             </span>
         </div>
