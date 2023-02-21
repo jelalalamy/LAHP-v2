@@ -1,5 +1,4 @@
 import React from 'react'
-import Quote from './Quote'
 
 const Header = () => {
     return (

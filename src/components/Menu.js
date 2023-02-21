@@ -1,13 +1,15 @@
 import React from 'react'
 import MenuItem from './MenuItem'
+import Clock from './Clock'
+import Weather from './Weather'
 
 const Menu = () => {
     const items = [
-        { component: 'Weather', label: 'Check the weather', icon: 'sun', height: 'max-h-60' },
-        { component: 'Todo', label: 'See your todo list', icon: 'todo', height: 'max-h-52'},
-        { component: 'Calendar', label: 'Open your calendar', icon: 'calendar', height: 'max-h-40' },
-        { component: 'Quote', label: 'Get a new quote', icon: 'quote', height: 'max-h-32' },
-        { component: 'Music', label: 'Listen to some music', icon: 'music', height: 'max-h-20' }
+        { component: <Weather />, label: 'Check the weather', icon: 'sun', height: 'max-h-32' },
+        { component: <Clock />, label: 'See your todo list', icon: 'todo', height: 'max-h-52'},
+        { component: <Clock />, label: 'Open your calendar', icon: 'calendar', height: 'max-h-40'},
+        { component: <Clock />, label: 'Get a new quote', icon: 'quote', height: 'max-h-32'},
+        { component: <Clock />, label: 'Listen to some music', icon: 'music', height: 'max-h-20' }
     ]
 
     return (
