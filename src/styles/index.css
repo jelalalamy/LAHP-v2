@@ -10,11 +10,11 @@
   padding: 0;
 }
 
-#App {
+body {
   font-family: 'Libre Franklin', sans-serif;
   background-color: rgb(29, 29, 29);
   color:#ffffff;
-  /* background-image: url('../uploads/wallpaper.jpg'); */
+  background-image: url('../uploads/wallpaper.jpg');
   background-size:cover;
   background-position: top center;
   background-repeat: no-repeat;
