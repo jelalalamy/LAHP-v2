@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen items-center">
+    <div id="App" className="flex flex-col h-screen items-center">
       <Header/>
       <CenterDisplay/>
       <Footer/>

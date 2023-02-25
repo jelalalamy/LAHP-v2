@@ -10,7 +10,7 @@
   padding: 0;
 }
 
-body {
+#App {
   font-family: 'Libre Franklin', sans-serif;
   background-color: rgb(29, 29, 29);
   color:#ffffff;
@@ -18,4 +18,25 @@ body {
   background-size:cover;
   background-position: top center;
   background-repeat: no-repeat;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; 
 }
