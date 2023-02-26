@@ -14,7 +14,8 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   background-color: rgb(29, 29, 29);
   color: #ffffff;
-  /* background-image: url('../uploads/wallpaper.jpg'); */
+  background: rgba(0, 0, 0, 0.35) url('../uploads/wallpaper.jpg');
+  background-blend-mode: darken;
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -39,6 +40,18 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #888;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .react-calendar__navigation {

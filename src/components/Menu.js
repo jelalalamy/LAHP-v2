@@ -4,15 +4,15 @@ import Weather from './Weather'
 import Todo from './Todo'
 import Calendar from './Calendar'
 import News from './News'
-import Fact from './Fact'
+import Timer from './Timer'
 
 const Menu = () => {
     const items = [
         { component: <Weather />, label: 'Check the weather', icon: 'sun', height: 'max-h-60', open: false },
-        { component: <Todo />, label: 'See your todo list', icon: 'todo', height: 'max-h-80', open: false},
+        { component: <Todo />, label: 'View your todo list', icon: 'todo', height: 'max-h-80', open: false},
         { component: <Calendar />, label: 'Open your calendar', icon: 'calendar', height: 'max-h-80', open: false},
-        { component: <News />, label: 'Get daily news', icon: 'news', height: 'max-h-80', open: false},
-        { component: <Fact />, label: 'Learn something new', icon: 'learn', height: 'max-h-80', open: false }
+        { component: <News />, label: 'Set a reminder', icon: 'news', height: 'max-h-80', open: false},
+        { component: <Timer />, label: 'Start a timer', icon: 'timer', height: 'max-h-60', open: false }
     ]
 
     return (

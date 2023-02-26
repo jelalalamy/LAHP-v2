@@ -7,7 +7,7 @@ const Weather = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
         const { latitude, longitude } = position.coords;
-        getWeather(latitude, longitude);
+        //getWeather(latitude, longitude);
       });
     } else {
       console.log("Geolocation is not supported by this browser.");
@@ -92,7 +92,7 @@ const Weather = () => {
       <div className='w-96 h-60 flex flex-col border-none py-4 select-none justify-center'>
         <div className='mx-auto flex flex-row text-6xl'>
           <span className="mx-auto">
-            {weather ? weather.temperature : 0}°C
+            {weather ? `${weather.temperature} °C` : `-`} 
           </span>
         </div>
         <div className='mx-auto mt-2 flex flex-row text-gray-300'>
@@ -100,11 +100,11 @@ const Weather = () => {
         </div>
         <div className='mx-auto mt-2 flex flex-row text-gray-300'>
           <span className='mr-2'>Wind</span>
-          {weather ? weather.windspeed : 0} km/h
+          {weather ? weather.windspeed : `-`} km/h
         </div>
         <div className='mx-auto mt-2 flex flex-row text-gray-300 text-sm'>
           <span className='mr-2'>Last updated:</span>
-          {weather ? `${weather.time.split("T")[0]}, ${weather.time.split("T")[1]}` : 0} UTC
+          {weather ? `${weather.time.split("T")[0]}, ${weather.time.split("T")[1]} UTC` : `Unknown`}
         </div>
       </div>
     </div>
