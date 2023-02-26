@@ -3,15 +3,15 @@ import MenuItem from './MenuItem'
 import Weather from './Weather'
 import Todo from './Todo'
 import Calendar from './Calendar'
-import News from './News'
+import Reminder from './Reminder'
 import Timer from './Timer'
 
 const Menu = () => {
     const items = [
-        { component: <Weather />, label: 'Check the weather', icon: 'sun', height: 'max-h-60', open: false },
+        { component: <Weather />, label: 'Check the weather', icon: 'weather', height: 'max-h-60', open: false },
         { component: <Todo />, label: 'View your todo list', icon: 'todo', height: 'max-h-80', open: false},
         { component: <Calendar />, label: 'Open your calendar', icon: 'calendar', height: 'max-h-80', open: false},
-        { component: <News />, label: 'Set a reminder', icon: 'news', height: 'max-h-80', open: false},
+        { component: <Reminder />, label: 'Set a reminder', icon: 'reminder', height: 'max-h-80', open: false},
         { component: <Timer />, label: 'Start a timer', icon: 'timer', height: 'max-h-60', open: false }
     ]
 

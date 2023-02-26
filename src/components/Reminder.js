@@ -1,6 +1,6 @@
 import React from 'react'
 
-const News = () => {
+const Reminder = () => {
   return (
     <div className="flex justify-center">
     <div className='w-96 h-80 flex flex-col border-none py-4'>
@@ -12,4 +12,4 @@ const News = () => {
   )
 }
 
-export default News
+export default Reminder
