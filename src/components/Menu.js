@@ -8,11 +8,11 @@ import Fact from './Fact'
 
 const Menu = () => {
     const items = [
-        { component: <Weather />, label: 'Check the weather', icon: 'sun', height: 'max-h-60' },
-        { component: <Todo />, label: 'See your todo list', icon: 'todo', height: 'max-h-80'},
-        { component: <Calendar />, label: 'Open your calendar', icon: 'calendar', height: 'max-h-80'},
-        { component: <News />, label: 'Get daily news', icon: 'news', height: 'max-h-80'},
-        { component: <Fact />, label: 'Learn something new', icon: 'music', height: 'max-h-80' }
+        { component: <Weather />, label: 'Check the weather', icon: 'sun', height: 'max-h-60', open: false },
+        { component: <Todo />, label: 'See your todo list', icon: 'todo', height: 'max-h-80', open: false},
+        { component: <Calendar />, label: 'Open your calendar', icon: 'calendar', height: 'max-h-80', open: false},
+        { component: <News />, label: 'Get daily news', icon: 'news', height: 'max-h-80', open: false},
+        { component: <Fact />, label: 'Learn something new', icon: 'learn', height: 'max-h-80', open: false }
     ]
 
     return (

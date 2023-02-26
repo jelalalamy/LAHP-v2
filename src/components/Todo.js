@@ -52,7 +52,8 @@ const Todo = () => {
           {todos.map(todo => (
             <div className='mt-1 flex' key={todo.text}>
               <div className='w-4'>
-                <input type="checkbox" checked={todo.checked} onChange={onCheck} />
+                <input className='border-transparent'
+                type="checkbox" checked={todo.checked} onChange={onCheck} />
               </div>
               <div className='w-max ml-1 break-all'>
                 {todo.text}

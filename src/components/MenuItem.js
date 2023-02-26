@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { FaChevronDown } from 'react-icons/fa'
 
 const MenuItem = ({ item }) => {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(item.open);
 
     const toggleOpen = () => {
         setOpen(!open);
