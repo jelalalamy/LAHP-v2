@@ -5,7 +5,7 @@ import Menu from './Menu'
 
 const CenterDisplay = () => {
   return (
-    <div className='flex md:flex-col lg:flex-row w-full items-center justify-evenly'>
+    <div className='flex sm: flex-col md:flex-col lg:flex-row w-full items-center justify-evenly'>
       <div>
         <Clock />
         <Greeting />
