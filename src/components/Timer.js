@@ -22,7 +22,7 @@ const Timer = () => {
   }, [timer]);
 
   const start = () => {
-    if (timeLeft > 0 || paused) {
+    if (timeLeft > 0 && paused) {
       setPaused(false);
       const timer = setInterval(() => {
         setTimeLeft((timeLeft) => (timeLeft) - 1);

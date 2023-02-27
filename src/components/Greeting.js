@@ -32,7 +32,7 @@ const Greeting = () => {
 
     return (
         <div className='flex justify-center py-2'>
-            {!userExists ? (
+            {!localStorage.getItem('user') ? (
                 <form onSubmit={onSubmit}>
                     <div className="flex items-center border-b border-current py-2 text-xl">
                         <input className="appearance-none bg-transparent w-72 border-none m-auto py-1 px-2 leading-tight focus:outline-none focus:placeholder-transparent text-center"
