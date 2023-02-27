@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 function App() {
 
   return (
-    <div id="App" className="flex flex-col h-screen items-center"
+    <div id="App" className="flex flex-col h-screen items-center overflow-hidden"
       style={localStorage.getItem('bgUrl') ? {
         background: `rgba(0, 0, 0, 0.35) url(${localStorage.getItem('bgUrl')})`,
         backgroundBlendMode: 'darken',

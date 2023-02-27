@@ -47,7 +47,7 @@ const Reminder = () => {
 
   return (
     <div className="flex justify-center">
-      <div className='w-96 h-60 flex flex-col border-none py-4 justify-center select-none'>
+      <div className='w-96 h-56 flex flex-col border-none py-4 justify-center select-none'>
         <label>Set a reminder for...</label>
         <input className='appearance-none bg-transparent focus:outline-none focus:placeholder-transparent border-b focus:border-current py-1 mb-3'
           type="text"

@@ -51,7 +51,7 @@ const Timer = () => {
 
   return (
     <div className="flex justify-center">
-      <div className='w-96 h-60 flex flex-col border-none py-4 justify-center select-none'>
+      <div className='w-96 h-56 flex flex-col border-none py-4 justify-center select-none'>
         <div className='mx-auto flex flex-row text-6xl'>
           <span className="mx-auto">
             {minutesLeft < 10 ? `0${minutesLeft}` : minutesLeft}:{secondsLeft < 10 ? `0${secondsLeft}` : secondsLeft}
