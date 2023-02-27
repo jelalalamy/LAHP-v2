@@ -10,7 +10,6 @@ const Timer = () => {
   useEffect(() => {
     setMinutesLeft(Math.floor(timeLeft / 60));
     setSecondsLeft(timeLeft % 60);
-    console.log(timeLeft)
     if (timeLeft === 0) {
       setPaused(true);
       clearInterval(timer);
