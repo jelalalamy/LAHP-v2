@@ -1,5 +1,5 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "LAHP v2",
   "description": "A nicer new tab page for Chrome.",
   "version": "2.1",
@@ -11,6 +11,5 @@
   },
   "chrome_url_overrides": {
     "newtab": "index.html"
-  },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+  }
 }

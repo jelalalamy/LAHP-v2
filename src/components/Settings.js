@@ -41,12 +41,9 @@ const Settings = () => {
         onChange={onBgUrlChange}
         onKeyDown={onBgUrlKeyDown} />
       <p className='text-sm leading-relaxed mt-6'>
-        Leave empty and press enter to return to the default (dark grey) background.
+        If the background did not change then the URL may be incorrect or broken.
       </p>
-      <p className='text-sm leading-relaxed mt-2'>
-        If the background appears as a very light grey, the URL may be incorrect.
-      </p>
-      <p className='text-sm leading-relaxed mt-2 mb-1'>
+      <p className='text-sm leading-relaxed mt-3 mb-1'>
         Change username (requires refresh):
       </p>
       <input className='mt-2 mr-8 appearance-none bg-transparent focus:outline-none focus:placeholder-transparent border-b focus:border-current'

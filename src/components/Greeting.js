@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const Greeting = () => {
+  const [userExists , setUserExists] = useState(false);
   const [user, setUser] = useState('');
 
   const getTimeOfDay = () => {
@@ -17,6 +18,7 @@ const Greeting = () => {
   const onSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem('user', e.target.user.value);
+    setUserExists(true);
     e.target.reset();
   }
 
@@ -24,12 +26,13 @@ const Greeting = () => {
     const user = localStorage.getItem('user');
     if (user) {
       setUser(user);
+      setUserExists(true);
     }
   }, []);
 
   return (
     <div className='flex justify-center py-2'>
-      {!localStorage.getItem('user') ? (
+      {!userExists ? (
         <form onSubmit={onSubmit}>
           <div className="flex items-center border-b border-current py-2 text-xl">
             <input className="appearance-none bg-transparent w-72 border-none m-auto py-1 px-2 leading-tight focus:outline-none focus:placeholder-transparent text-center"
