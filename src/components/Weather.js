@@ -1,13 +1,22 @@
 import { useState, useEffect } from 'react'
 
+const HOUR = 60 * 60 * 1000;
+
 const Weather = () => {
   const [weather, setWeather] = useState(null);
 
   useEffect(() => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
-        const { latitude, longitude } = position.coords;
-        //getWeather(latitude, longitude);
+        const lastWeatherUpdate = localStorage.getItem('lastWeatherUpdate');
+        const now = new Date();
+        if ((now - (new Date(lastWeatherUpdate)) > HOUR) || lastWeatherUpdate === null) {
+          const { latitude, longitude } = position.coords;
+          getWeather(latitude, longitude);
+          localStorage.setItem('lastWeatherUpdate', now);
+        } else {
+          setWeather(JSON.parse(localStorage.getItem('storedWeather')));
+        }
       });
     } else {
       console.log("Geolocation is not supported by this browser.");
@@ -20,6 +29,7 @@ const Weather = () => {
       .then((res) => res.json())
       .then((data) => {
         setWeather(data.current_weather);
+        localStorage.setItem('storedWeather', JSON.stringify(data.current_weather));
         console.log(data.current_weather);
       });
   };
@@ -92,7 +102,7 @@ const Weather = () => {
       <div className='w-96 h-60 flex flex-col border-none py-4 select-none justify-center'>
         <div className='mx-auto flex flex-row text-6xl'>
           <span className="mx-auto">
-            {weather ? `${weather.temperature} °C` : `-`} 
+            {weather ? `${weather.temperature} °C` : `-`}
           </span>
         </div>
         <div className='mx-auto mt-2 flex flex-row text-gray-300'>
