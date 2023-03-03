@@ -6,7 +6,7 @@
   "icons": {
     "128": "icon_128.png"
   },
-  "browser_action": {
+  "action": {
     "default_icon": "icon.png"
   },
   "chrome_url_overrides": {
