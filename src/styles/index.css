@@ -18,8 +18,6 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   background-color: rgb(29, 29, 29);
   color: #ffffff;
-  /* background: rgba(0, 0, 0, 0.35) url('https://wallpaper.dog/large/20468918.jpg'); */
-  /* background: rgba(0, 0, 0, 0.35) url('../uploads/wallpaper.jpg'); */
   background-blend-mode: darken;
   background-size: cover;
   background-position: top center;
